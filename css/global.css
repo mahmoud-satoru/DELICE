@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --main_color: #E3C590;
+    --secondary_color: #F8F9FA;
+    --third_color: #0E0D0C;
+    --fourth-color: #171819;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Forum';
+}
+
+p,
+a{
+    font-family: 'DM Sans';
+}
+
+section{
+    overflow-x: hidden;
+}

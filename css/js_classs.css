@@ -1,0 +1,32 @@
+.active_slider.slider{
+    z-index: 7;
+    transform: scale(1);
+    opacity: 1;
+    filter: brightness(1);
+}
+
+.active_span{
+    width: 90px !important;
+    border-radius: 10px !important;
+    background-color: var(--main_color) !important;
+}
+
+.show_container{
+    opacity: 1 !important;
+}
+
+.not_hide{
+    display: initial !important;
+}
+
+.side_bar_trans{
+    transform: translateX(0px) !important;
+}
+
+.active_menu{
+    color: var(--main_color) !important;
+}
+
+.active_sidebar{
+    color: var(--main_color) !important;
+}

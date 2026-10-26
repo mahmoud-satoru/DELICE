@@ -1,0 +1,37 @@
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg) scale(0.8);
+        border-radius: 50%;
+        
+    }
+
+    to {
+        transform: rotateZ(360deg) scale(1.01);
+        border-radius: 0px;
+    }
+}
+
+@keyframes stretch {
+    0% {
+        width: 100%;
+        
+    }
+
+    50%{
+        width: 30%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
