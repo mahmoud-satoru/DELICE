@@ -30,3 +30,11 @@
 .active_sidebar{
     color: var(--main_color) !important;
 }
+
+.aactive{
+    display: flex;
+}
+
+.aactive_show{
+    opacity: 1;
+}
