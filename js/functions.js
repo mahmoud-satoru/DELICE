@@ -352,3 +352,25 @@ function close_food_popup(){
         }
     }, 500);
 }
+
+
+
+
+
+
+let book = document.querySelector(".book_now_container");
+
+function open_side_bar_2(){
+    book.classList.add("aactive");
+    setTimeout(function(){
+        book.classList.add("aactive_show");
+    }, 1);
+}
+
+function hide_2(){
+    book.classList.remove("aactive_show");
+    setTimeout(function(){
+        book.classList.remove("aactive");
+    }, 500);
+
+}
