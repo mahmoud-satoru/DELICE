@@ -21,6 +21,48 @@
 
 <div class="scroll_progress"></div>
 
+<div class="book_now_container" onclick="hide_2()">
+    <div class="book_now" onclick="event.stopPropagation()">
+        <h6>RESERVATION</h6>
+        <img src="" alt="">
+        <h2>Book A Table</h2>
+        <p>Restaurant will be open every day <span>from 8:00 AM to 10:00 PM.</span>
+        Online reservations are available <span>from 7:00 AM to 9:00 PM.</span>
+        All booking payments are secured by credit card. No extra charges apply to online bookings. The booking is non-refundable.</p>
+        <p>Booking request <span>+20-102-108-0042</span> or fill out the order form</p>
+
+        <form action="" class="delice_form">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control delice_input" placeholder="Your Name">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <input type="tel" class="form-control delice_input" placeholder="Phone Number">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <input type="date" class="form-control delice_input">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <input type="time" class="form-control delice_input">
+                </div>
+
+                <div class="col-12">
+                    <textarea class="form-control delice_input delice_textarea" placeholder="Your Message"></textarea>
+                </div>
+
+            </div>
+
+            <button>BOOK</button>
+
+        </form>
+    </div>
+</div>
+
 <main>
     <div class="home">
 
@@ -138,7 +180,7 @@
             <i class="fa-solid fa-chevron-left"></i>
         </button>
 
-        <button class="buttom_icon">
+        <button class="buttom_icon" onclick="open_side_bar_2()">
             <img src="imgs/home/book-icon-1.png" alt="">
             <p>BOOK A TABLE</p>
         </button>
