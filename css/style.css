@@ -582,9 +582,8 @@
 
 .sec_3 {
     width: 100%;
-    padding: 30px;
     background-color: var(--fourth-color);
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 
     .part {
         padding-top: 30px;
@@ -1007,8 +1006,10 @@
     background-position: center;
     background-size: cover;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100dvh;
-    padding-top: 50px;
 
     form {
         display: flex;
@@ -1126,14 +1127,14 @@
     background-color: rgba(39, 36, 2, 0.8);
     overflow-y: auto;
     scrollbar-width: none;
-    z-index: 999999;
+    z-index: 2999;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
 .food_disc {
     position: relative;
-    z-index: 1000000;
+    z-index: 3000;
     width: 60%;
     min-width: 290px;
     max-width: 800px;
@@ -1220,4 +1221,99 @@
 .food_disc .btn_arrow:hover {
     color: #000;
     background: var(--main_color);
+}
+
+.book_now_container{
+    width: 100%;
+    height: 100vh;
+    background-color: #4a4404ad;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 30000;
+    overflow-y: scroll;
+    opacity: 0;
+    transition-duration: 0.5s;
+
+    .book_now{
+        width: 40%;
+        min-width: 300px;
+        background-color: #fff;
+        padding-inline: 20px;
+        padding-block: 30px;
+        text-align: center;
+        background-color: var(--fourth-color);
+
+        h6{
+            color: var(--main_color);
+            font-size: 16px;
+        }
+
+        img{
+            width: 150px;
+        }
+
+        h2{
+            color: var(--secondary_color);
+            margin-bottom: 25px;
+        }
+
+        p{
+            color: #786f6f;
+            span{
+                color: var(--main_color);
+            }
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+    button{
+        padding: 5px 15px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: var(--main_color) 1px solid;
+        margin-top: 20px;
+        color: var(--main_color);
+        width: 200px;
+        transition-duration: 0.5s;
+    }
+
+    button:hover{
+        color: var(--fourth-color);
+        background-color: var(--main_color);
+    }
+
+}
+
+.delice_form .delice_input {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid var(--main_color);
+    border-radius: 5px;
+    color: var(--main_color);
+    padding: 5px 10px;
+}
+
+.delice_form .delice_input::placeholder {
+    color: var(--main_color);
+    opacity: 1;
+}
+
+.delice_form .delice_textarea {
+    height: 160px;
+    padding: 15px 18px;
+    resize: none;
+}
+
+
+.delice_form .delice_textarea:focus {
+    background-color: transparent;
+}
+
+.delice_form .delice_input:focus {
+    background-color: transparent;
 }
